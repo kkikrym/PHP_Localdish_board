@@ -1,0 +1,179 @@
+/*メッセージの文字色、サイズ調整*/
+.bluechar{
+    color:blue;
+}
+.redchar{
+    color:red;
+}
+.bigger{
+    font-size:30px;
+}
+.graybg{
+    background-color:#eee;
+}
+
+/*ヘッダー関連*/
+.header {
+  height: 65px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.header-left {
+  float: left;
+  padding: 10px 60px;
+  color: #ED7000;
+  font-size: 30px;
+}
+
+.header-center {
+ float: left;
+ text-align: center;
+ padding: 20px 60px;
+ font-size: 20px;
+}
+
+.header-migi{
+padding: 20px 60px;
+position: absolute;
+right:0;
+font-size: 20px;
+}
+
+.header-right {
+  float: right;
+  color: #808080;
+}
+
+/*投稿欄レイヤー*/
+
+/*外側のレイヤー*/
+.layer{
+background-color:#eee;
+/* 背景画像設定 */
+
+/* ボックス配置指定 */
+position: relative;/**/
+margin: 0 auto;
+text-align: left;
+/* ボックスサイズ指定 */
+height: 150px;
+width: 100%;
+}
+
+/*コメント欄用レイヤー（画像の直前で折り返す）*/
+.layer-comment{
+position: absolute;
+top: 0;
+left: 0;
+width: 890px/*左〜画像の左までの距離*/
+}
+
+/*画像を右上に固定*/
+.layer-in{
+position: absolute;
+top: 3px;
+right: 0;
+}
+
+/*返信投稿ボタンはコメントレイヤーの一番下に固定*/
+.layer-bottom{
+/* 画像配置指定 */
+position: absolute;
+bottom: 3px;
+left: 0;
+}
+
+
+.main {
+  min-width: 1100px;
+}
+
+/*投稿を表示する欄*/
+.contact-form {
+  width: 70%;
+  margin: 4% auto;
+  padding: 4%;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.user {
+  background-color: #239b76;
+}
+
+.mail {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.pass {
+  background-color: #55acee;
+}
+
+.re-pass {
+  background-color: #ED7000
+}
+
+.re-form {
+  color: #ffffff
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.selected {
+  color: #ED7000;
+}
